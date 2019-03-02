@@ -14,6 +14,102 @@
  .main{
 	@include povh('');
  }
+  .bnr{
+    padding-top:26px;
+    background-position: top center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    color: #fff;
+    h1{
+      color: #ffffff;
+      font-size:60px;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+      padding-bottom:40px;
+      line-height:1.1;
+    }
+    &__text{
+      margin-bottom:85px;
+      font-size:30px;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+    }
+    &__form{
+      background: rgba(0,0,0,0.23);
+      padding:20px;
+      h4{
+        text-align: center;
+        font-size:30px;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+        text-transform: uppercase;
+        padding-bottom:30px;
+      }
+      input, select{
+        width:100%;
+        height:43px;
+        margin-bottom:30px;
+      }
+      .button{
+        width:100%;
+      }
+    }
+  }
+    .logo{
+      text-align: center;
+      display: block;
+      padding-bottom:69px;
+    }
+  .about{
+    padding:50px 0;
+    background: url(../img/note.png) no-repeat 45px 35px, url(../img/dots.png) no-repeat top left;
+    article{
+      text-align: center;
+      font-size:16px;
+      color: #383838;
+      font-weight:100;
+      padding-bottom:55px;
+      h2{
+        font-weight:300;
+        padding-bottom:40px;
+        color: #212020;
+        font-size:36px;
+      }
+    }
+    &__item{
+      border:1px solid #dedede;
+      border-radius:3px;
+      background: #fff;
+      padding:15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size:24px;
+      color: #1f1f1f;
+      figcaption{
+        padding-left:16px;
+      }
+    }
+  }
+  .info{
+    background: url(../img/footer-bg.png) no-repeat bottom center;
+    height:649px;
+    display: flex;
+    font-size:18px;
+    color: #fff;
+    align-items: flex-end;
+    p{
+      padding-bottom:23px;
+      text-align: center;
+      padding-top:10px;
+      line-height:2;
+    }
+    strong{
+      display: block;
+      font-size:36px;
+      padding-top:20px;
+      font-weight: normal;
+      text-align: right;
+    }
+  }
 
 /*----------end main----------*/	
 
@@ -22,6 +118,23 @@
  
  .footer{
 	@include povh('');
+   padding:25px 0;
+   background: #1f1e1b;
+   font-size:12px;
+   text-transform: uppercase;
+   address{
+     color: #fff;
+     font-style: normal;
+   }
+   &__nav{
+     text-align: right;
+     a{
+       padding:0 0 0 5px;
+       &:hover{
+         opacity:0.9;
+       }
+     }
+   }
  }
 
 /*----------end footer----------*/

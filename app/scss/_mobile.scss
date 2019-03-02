@@ -3,6 +3,87 @@
 
 
 //styles for custom device width
-@include mq($max-width: 1000px) {
-  
+@include mq($max-width: 1200px) {
+  .bnr h1{
+    font-size:40px;
+  }
+  img{
+    max-width:100%;
+  }
+}
+
+@include mq($max-width: 992px) {
+  .bnr{
+    &__text{
+      text-align: center;
+    }
+  }
+  .about__item{
+    display: block;
+    text-align: center;
+    height:100%;
+    figcaption{
+      padding-left:0;
+    }
+    img{
+      display: block;
+      margin:20px auto;
+    }
+  }
+}
+
+@include mq($max-width: 767px) {
+  .logo{
+    padding-bottom:25px;
+  }
+  .bnr{
+    h1{
+      font-size:24px;
+      padding-bottom:20px;
+    }
+    &__text{
+      font-size:18px;
+      margin-bottom:30px;
+    }
+  }
+  .bnr__form h4{
+    font-size:24px;
+  }
+  .about__item{
+    margin-bottom:25px;
+    height:auto;
+  }
+  .about article h2{
+    font-size:26px;
+    padding-bottom:20px;
+  }
+  .info {
+    height:580px;
+    padding-bottom:20px;
+    img{
+      display: block;
+      margin:0 auto;
+    }
+    p{
+      padding-bottom:0;
+    }
+    strong{
+      text-align: center;
+      font-size:24px;
+    }
+  }
+  .footer{
+    text-align: center;
+  }
+  .footer__nav{
+    text-align: center;
+    padding-top:15px;
+    a{
+      padding-left:3px;
+      padding-right:3px;
+    }
+  }
+  .about{
+    background:  url(../img/dots.png) no-repeat top left;
+  }
 }

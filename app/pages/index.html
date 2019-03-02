@@ -2,5 +2,101 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h1>1 This is the index page</h1>
+<!-- banner -->
+<div class="bnr" style="background-image: url(img/background.jpg)">
+    <div class="container">
+        <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+        <div class="bnr__text">
+           <div class="row">
+               <div class="col-lg-10">
+                   <h1>Modernized Property
+                       Management System native
+                       to the Salesforce Platform.</h1>
+                   <p>Enterprise hospitality cloud computing, done right. <br>
+                       Dont fight change, Dont fight the cloud. Embrace it.</p>
+               </div>
+           </div>
+        </div>
+        <div class="bnr__form">
+            <h4>your information</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" placeholder="Company">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" placeholder="Phone">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" placeholder="Number of rooms">
+                </div>
+                <div class="col-md-4">
+                    <select name="" id="">
+                        <option>Current PMS</option>
+                        <option>Current PMS2</option>
+                        <option>Current PMS3</option>
+                        <option>Current PMS4</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                   <button class="button">Download Information</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /banner -->
+<!-- about -->
+<div class="about">
+    <div class="container">
+        <article>
+            <h2>About this some text</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p>
+        </article>
+        <div class="row">
+            <div class="col-md-4">
+                <figure class="about__item">
+                    <img src="img/phone.png" alt="">
+                    <figcaption>Mobile Ready </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <figure class="about__item">
+                    <img src="img/thunder.png" alt="">
+                    <figcaption>Lightning ready </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <figure class="about__item">
+                    <img src="img/saleforce.png" alt="">
+                    <figcaption>available on
+                        AppExchange </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /about -->
+<!-- bottom -->
+<div class="info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="img/saleforce-partner.png" alt="">
+            </div>
+            <div class="col-md-5">
+                <p>101 N Wacker Dr., Suite 110 Chicago, IL 60606 <br>
+                    sales@bookingninjas.com</p>
+            </div>
+            <div class="col-md-4">
+                <strong>(866) 217 3210</strong>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /bottom -->
 {% endblock %}
