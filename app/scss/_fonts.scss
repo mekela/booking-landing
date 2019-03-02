@@ -2,4 +2,31 @@
 
 
 //exemple of use:
-//@include font(Roboto, roboto_bold);
+@font-face {
+    font-family: 'Museo';
+    src: url("../fonts/MuseoSansRegular/MuseoSansRegular.eot");
+    src: url("../fonts/MuseoSansRegular/MuseoSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansRegular/MuseoSansRegular.woff") format("woff"), url("../fonts/MuseoSansRegular/MuseoSansRegular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Museo';
+    src: url("../fonts/MuseoSansBold/MuseoSansBold.eot");
+    src: url("../fonts/MuseoSansBold/MuseoSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansBold/MuseoSansBold.woff") format("woff"), url("../fonts/MuseoSansBold/MuseoSansBold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Museo';
+    src: url("../fonts/MuseoSansLight/MuseoSansLight.eot");
+    src: url("../fonts/MuseoSansLight/MuseoSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansLight/MuseoSansLight.woff") format("woff"), url("../fonts/MuseoSansLight/MuseoSansLight.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Museo';
+    src: url("../fonts/MuseoSansMedium/MuseoSansMedium.eot");
+    src: url("../fonts/MuseoSansMedium/MuseoSansMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansMedium/MuseoSansMedium.woff") format("woff"), url("../fonts/MuseoSansMedium/MuseoSansMedium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}

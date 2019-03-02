@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'Museo';
+  src: url("../fonts/MuseoSansRegular/MuseoSansRegular.eot");
+  src: url("../fonts/MuseoSansRegular/MuseoSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansRegular/MuseoSansRegular.woff") format("woff"), url("../fonts/MuseoSansRegular/MuseoSansRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo';
+  src: url("../fonts/MuseoSansBold/MuseoSansBold.eot");
+  src: url("../fonts/MuseoSansBold/MuseoSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansBold/MuseoSansBold.woff") format("woff"), url("../fonts/MuseoSansBold/MuseoSansBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo';
+  src: url("../fonts/MuseoSansLight/MuseoSansLight.eot");
+  src: url("../fonts/MuseoSansLight/MuseoSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansLight/MuseoSansLight.woff") format("woff"), url("../fonts/MuseoSansLight/MuseoSansLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo';
+  src: url("../fonts/MuseoSansMedium/MuseoSansMedium.eot");
+  src: url("../fonts/MuseoSansMedium/MuseoSansMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansMedium/MuseoSansMedium.woff") format("woff"), url("../fonts/MuseoSansMedium/MuseoSansMedium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
 /*! normalize.css v6.0.0 */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
 h6, p, blockquote, pre, a, abbr, acronym, address, big,
@@ -193,7 +221,7 @@ h1, h2, h3, h4, h5, h6, a, span, a:focus {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Museo Sans", sans-serif;
+  font-family: "Museo", sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 1.4; }
@@ -235,13 +263,14 @@ h6 {
 .button {
   background: #fbcd04;
   border-radius: 0px;
-  font-family: "Museo Sans", sans-serif;
+  font-family: "Museo", sans-serif;
   color: #1d1d1d;
   font-size: 18px;
   padding: 11px 20px;
   text-decoration: none;
   text-align: center;
   border: none;
+  font-weight: 700;
   display: inline-block;
   -webkit-appearance: none; }
   .button:hover {
@@ -254,10 +283,11 @@ input[type=text], input[type=email], input[type=tel], input[type=search], input[
   padding: 0 10px;
   color: #fff;
   font-size: 14px;
-  font-family: "Museo Sans", sans-serif;
+  font-family: "Museo", sans-serif;
   border: 1px solid #f5c806;
   border-radius: 2px;
   resize: none;
+  font-weight: 300;
   background: #333333; }
   input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=search]:focus, input[type=password]:focus, input[type=date]:focus, input[type=url]:focus, select:focus, textarea:focus {
     box-shadow: 0 0 2px #f5c806; }
@@ -375,10 +405,12 @@ textarea {
     text-transform: uppercase;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
     padding-bottom: 40px;
-    line-height: 1.1; }
+    line-height: 1.1;
+    font-weight: 700; }
   .bnr__text {
     margin-bottom: 85px;
     font-size: 30px;
+    font-weight: 700;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75); }
   .bnr__form {
     background: rgba(0, 0, 0, 0.23);
@@ -388,7 +420,8 @@ textarea {
       font-size: 30px;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
       text-transform: uppercase;
-      padding-bottom: 30px; }
+      padding-bottom: 30px;
+      font-weight: 300; }
     .bnr__form input, .bnr__form select {
       width: 100%;
       height: 43px;
@@ -408,7 +441,7 @@ textarea {
     text-align: center;
     font-size: 16px;
     color: #383838;
-    font-weight: 100;
+    font-weight: 300;
     padding-bottom: 55px; }
     .about article h2 {
       font-weight: 300;
@@ -433,6 +466,7 @@ textarea {
   height: 649px;
   display: flex;
   font-size: 18px;
+  font-weight: 300;
   color: #fff;
   align-items: flex-end; }
   .info p {
@@ -444,7 +478,7 @@ textarea {
     display: block;
     font-size: 36px;
     padding-top: 20px;
-    font-weight: normal;
+    font-weight: 300;
     text-align: right; }
 
 /*----------end main----------*/
