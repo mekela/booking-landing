@@ -17,6 +17,16 @@
     &__text{
       text-align: center;
     }
+    h2, h3{
+      padding-bottom: 30px;
+      font-size: 35px;
+    }
+  }
+  .bnr article strong{
+    font-size: 25px;
+  }
+  .bnr article{
+    font-size: 20px;
   }
   .about__item{
     display: block;
@@ -28,6 +38,15 @@
     img{
       display: block;
       margin:20px auto;
+    }
+  }
+  .info strong{
+    font-size: 30px;
+  }
+  .bnr.bnr-thank{
+    padding: 40px 0;
+    .logo img{
+      max-width: 40%;
     }
   }
 }
@@ -85,5 +104,13 @@
   }
   .about{
     background:  url(../img/dots.png) no-repeat top left;
+  }
+  .info.info-success{
+    height: auto;
+    padding: 20px 0;
+  }
+  .header{
+    height: auto;
+    padding: 10px 0;
   }
 }

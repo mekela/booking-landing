@@ -385,7 +385,10 @@ textarea {
 /*----------header----------*/
 .header {
   position: relative;
-  overflow: hidden; }
+  height: 120px;
+  background: #fff;
+  z-index: 3;
+  padding-top: 7px; }
 
 /*----------end-header----------*/
 /*----------main----------*/
@@ -407,6 +410,29 @@ textarea {
     padding-bottom: 40px;
     line-height: 1.1;
     font-weight: 700; }
+  .bnr h2 {
+    font-size: 55px;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 120px; }
+  .bnr h3 {
+    font-size: 58px;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 30px; }
+  .bnr article {
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+    padding-bottom: 60px; }
+    .bnr article strong {
+      display: block;
+      font-size: 30px; }
+    .bnr article a.button {
+      margin-top: 30px;
+      text-shadow: none;
+      min-width: 120px; }
   .bnr__text {
     margin-bottom: 85px;
     font-size: 30px;
@@ -428,6 +454,10 @@ textarea {
       margin-bottom: 30px; }
     .bnr__form .button {
       width: 100%; }
+  .bnr.bnr-success .bnr__text, .bnr.bnr-thank .bnr__text {
+    margin-bottom: 0; }
+  .bnr.bnr-thank {
+    padding: 155px 0; }
 
 .logo {
   text-align: center;
@@ -469,6 +499,16 @@ textarea {
   font-weight: 300;
   color: #fff;
   align-items: flex-end; }
+  .info.info-success {
+    background: url(../img/success-info-bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 210px;
+    align-items: center; }
+    .info.info-success p {
+      padding-bottom: 0; }
+  .info.info-success-thank {
+    background: url(../img/info-thank.jpg) no-repeat center;
+    background-size: cover; }
   .info p {
     padding-bottom: 23px;
     text-align: center;
@@ -510,6 +550,13 @@ textarea {
 @media only screen and (max-width: 992px) {
   .bnr__text {
     text-align: center; }
+  .bnr h2, .bnr h3 {
+    padding-bottom: 30px;
+    font-size: 35px; }
+  .bnr article strong {
+    font-size: 25px; }
+  .bnr article {
+    font-size: 20px; }
   .about__item {
     display: block;
     text-align: center;
@@ -518,7 +565,13 @@ textarea {
       padding-left: 0; }
     .about__item img {
       display: block;
-      margin: 20px auto; } }
+      margin: 20px auto; }
+  .info strong {
+    font-size: 30px; }
+  .bnr.bnr-thank {
+    padding: 40px 0; }
+    .bnr.bnr-thank .logo img {
+      max-width: 40%; } }
 
 @media only screen and (max-width: 767px) {
   .logo {
@@ -557,4 +610,10 @@ textarea {
       padding-left: 3px;
       padding-right: 3px; }
   .about {
-    background: url(../img/dots.png) no-repeat top left; } }
+    background: url(../img/dots.png) no-repeat top left; }
+  .info.info-success {
+    height: auto;
+    padding: 20px 0; }
+  .header {
+    height: auto;
+    padding: 10px 0; } }
