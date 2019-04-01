@@ -87,6 +87,16 @@
         width:100%;
       }
     }
+    &__btn{
+      padding-top: 60px;
+      .button{
+        text-transform: uppercase;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        width: 297px;
+        box-shadow: 0 7px 13px rgba(251, 205, 4, 0.36);
+      }
+    }
     &.bnr-success, &.bnr-thank{
       .bnr__text{
         margin-bottom: 0;
@@ -94,6 +104,45 @@
     }
     &.bnr-thank{
       padding: 155px 0;
+      h4{
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+        color: #ffffff;
+        font-size: 58px;
+        font-weight: 700;
+        letter-spacing: 0.58px;
+        text-align: center;
+        line-height: 1.1;
+        margin-bottom: 100px;
+      }
+      select, input{
+        opacity: 1;
+        color: #000000;
+        font-size: 30px;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.75px;
+        width: 163px;
+        height: 51px;
+        box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.75);
+        border: none;
+        padding: 0 17px;
+        margin: 0 13px;
+        border-radius: 0;
+        background: #fff;
+        &.input-date{
+          background: #fff url(../img/calendar-plus-o.png) no-repeat center right 12px;
+        }
+      }
+    }
+  }
+  .download-button{
+    padding: 20px 0 60px 0;
+    text-align: center;
+    .text_center{
+      padding-bottom: 25px;
+    }
+    .button{
+      text-shadow: none;
     }
   }
     .logo{
@@ -167,7 +216,61 @@
       text-align: right;
     }
   }
-  
+  .bnr-information-wrapper{
+    display: flex;
+    flex-direction: column;
+    & > .container{
+      flex: 1;
+    }
+    .info{
+      background-image: url(../img/info-opacity.png);
+    }
+  }
+  .modal{
+    background: #fff;
+    display: none;
+    padding: 0;
+    width: 720px;
+    .fancybox-close-small{
+      color: #fff;
+      font-size: 22px; 
+    }
+    &__title{
+      background: url(../img/modal-bg1.jpg) no-repeat center ;
+      background-size: cover;
+      text-align: center;
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 35px;
+      h6{
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 300;
+        padding: 110px 0 25px 0;
+      }
+    }
+    &__form{
+      padding: 0 18px 22px 18px;
+    }
+    &__form-item{
+      margin-bottom: 21px;
+      input{
+        width: 100%;
+        height: 43px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+         background-color: #f4f7f8;
+        color: #1a1a1a;
+      }
+      .button{
+        min-width: 320px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+      }
+    }
+  }
 
 /*----------end main----------*/	
 

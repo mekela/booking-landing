@@ -277,7 +277,7 @@ textarea{
 //end buttons inputs
 
 .modal{
-  display: none;
+  //display: none;
 }
 
 .clear {clear: both;height: 0;overflow: hidden;}
@@ -299,7 +299,9 @@ textarea{
 .alignright, img.alignright {float: right;padding-left: 10px; padding-bottom: 5px;}
 .aligncenter, img.aligncenter {text-align: center;margin: 0 auto;}
 .alignnone, img.alignnone {float: none;}
-
+.ttn{
+  text-transform: none !important;
+}
 
 //main containers
 .wrapper{

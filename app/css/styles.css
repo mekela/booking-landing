@@ -311,9 +311,6 @@ textarea {
   height: 90px;
   padding-top: 5px; }
 
-.modal {
-  display: none; }
-
 .clear {
   clear: both;
   height: 0;
@@ -377,6 +374,9 @@ textarea {
 
 .alignnone, img.alignnone {
   float: none; }
+
+.ttn {
+  text-transform: none !important; }
 
 .wrapper {
   position: relative;
@@ -454,10 +454,52 @@ textarea {
       margin-bottom: 30px; }
     .bnr__form .button {
       width: 100%; }
+  .bnr__btn {
+    padding-top: 60px; }
+    .bnr__btn .button {
+      text-transform: uppercase;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      width: 297px;
+      box-shadow: 0 7px 13px rgba(251, 205, 4, 0.36); }
   .bnr.bnr-success .bnr__text, .bnr.bnr-thank .bnr__text {
     margin-bottom: 0; }
   .bnr.bnr-thank {
     padding: 155px 0; }
+    .bnr.bnr-thank h4 {
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+      color: #ffffff;
+      font-size: 58px;
+      font-weight: 700;
+      letter-spacing: 0.58px;
+      text-align: center;
+      line-height: 1.1;
+      margin-bottom: 100px; }
+    .bnr.bnr-thank select, .bnr.bnr-thank input {
+      opacity: 1;
+      color: #000000;
+      font-size: 30px;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 0.75px;
+      width: 163px;
+      height: 51px;
+      box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.75);
+      border: none;
+      padding: 0 17px;
+      margin: 0 13px;
+      border-radius: 0;
+      background: #fff; }
+      .bnr.bnr-thank select.input-date, .bnr.bnr-thank input.input-date {
+        background: #fff url(../img/calendar-plus-o.png) no-repeat center right 12px; }
+
+.download-button {
+  padding: 20px 0 60px 0;
+  text-align: center; }
+  .download-button .text_center {
+    padding-bottom: 25px; }
+  .download-button .button {
+    text-shadow: none; }
 
 .logo {
   text-align: center;
@@ -521,6 +563,52 @@ textarea {
     font-weight: 300;
     text-align: right; }
 
+.bnr-information-wrapper {
+  display: flex;
+  flex-direction: column; }
+  .bnr-information-wrapper > .container {
+    flex: 1; }
+  .bnr-information-wrapper .info {
+    background-image: url(../img/info-opacity.png); }
+
+.modal {
+  background: #fff;
+  display: none;
+  padding: 0;
+  width: 720px; }
+  .modal .fancybox-close-small {
+    color: #fff;
+    font-size: 22px; }
+  .modal__title {
+    background: url(../img/modal-bg1.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 35px; }
+    .modal__title h6 {
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: 300;
+      padding: 110px 0 25px 0; }
+  .modal__form {
+    padding: 0 18px 22px 18px; }
+  .modal__form-item {
+    margin-bottom: 21px; }
+    .modal__form-item input {
+      width: 100%;
+      height: 43px;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      background-color: #f4f7f8;
+      color: #1a1a1a; }
+    .modal__form-item .button {
+      min-width: 320px;
+      padding-top: 18px;
+      padding-bottom: 18px; }
+
 /*----------end main----------*/
 /*----------footer----------*/
 .footer {
@@ -571,7 +659,14 @@ textarea {
   .bnr.bnr-thank {
     padding: 40px 0; }
     .bnr.bnr-thank .logo img {
-      max-width: 40%; } }
+      max-width: 40%; }
+  .bnr.bnr-thank h4 {
+    font-size: 30px;
+    margin-bottom: 30px; }
+  .modal {
+    max-width: 90%; }
+  .modal__form-item .button {
+    min-width: 10px; } }
 
 @media only screen and (max-width: 767px) {
   .logo {
@@ -616,4 +711,9 @@ textarea {
     padding: 20px 0; }
   .header {
     height: auto;
-    padding: 10px 0; } }
+    padding: 10px 0; }
+  .bnr.bnr-thank select, .bnr.bnr-thank input {
+    margin-bottom: 15px;
+    font-size: 16px; }
+  .bnr.bnr-thank h4 {
+    font-size: 21px; } }

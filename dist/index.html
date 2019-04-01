@@ -6,7 +6,7 @@
   <meta name="keywords" content="">
   <meta name="viewport" content="initial-scale=1"/>
   <title>title</title>
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
@@ -137,9 +137,29 @@
 
 <!--SCRIPT -->
 <script src="js/jquery.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 
 <script src="js/common.js"></script>
 <!-- END OF SCRIPT -->
+
+
+<!--modal-->
+<div class="modal" id="modal1">
+    <div class="modal__title">
+        <h6>Sign UP</h6>
+    </div>
+    <div class="modal__form">
+        <div class="modal__form-item"><input type="text" placeholder="Name"></div>
+        <div class="modal__form-item"><input type="text" placeholder="E-mail"></div>
+        <div class="modal__form-item"><input type="text" placeholder="Company name"></div>
+        <div class="modal__form-item"><input type="text" placeholder="CEO"></div>
+        <div class="modal__form-item"><input type="text" placeholder="Previous Events Spoken at (Optional)"></div>
+        <div class="modal__form-item"><img src="img/captcha.png" alt=""></div>
+        <div class="modal__form-item text_center"><button class="button">Submit</button><div>
+    </div>
+</div>
+<!--/modal-->
+
 
 </body>
 </html>

@@ -49,6 +49,16 @@
       max-width: 40%;
     }
   }
+  .bnr.bnr-thank h4{
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .modal{
+    max-width: 90%;
+  }
+  .modal__form-item .button{
+    min-width: 10px;
+  }
 }
 
 @include mq($max-width: 767px) {
@@ -112,5 +122,12 @@
   .header{
     height: auto;
     padding: 10px 0;
+  }
+  .bnr.bnr-thank select, .bnr.bnr-thank input{
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  .bnr.bnr-thank h4{
+    font-size: 21px;
   }
 }
