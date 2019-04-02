@@ -390,6 +390,30 @@ textarea {
   z-index: 3;
   padding-top: 7px; }
 
+.header-light {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  margin-bottom: 198px;
+  margin-top: -26px; }
+  .header-light .container {
+    border-bottom: 2px solid #fff; }
+  .header-light .logo {
+    padding-bottom: 0;
+    padding-top: 11px; }
+    .header-light .logo img {
+      display: block;
+      margin: 0 auto; }
+
+.gdpr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  max-width: 15vw; }
+  .gdpr img {
+    max-width: 100%; }
+
 /*----------end-header----------*/
 /*----------main----------*/
 .main {
@@ -402,7 +426,7 @@ textarea {
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff; }
-  .bnr h1 {
+  .bnr h1, .bnr h4 {
     color: #ffffff;
     font-size: 60px;
     text-transform: uppercase;
@@ -410,6 +434,9 @@ textarea {
     padding-bottom: 40px;
     line-height: 1.1;
     font-weight: 700; }
+  .bnr h4 {
+    font-size: 48px;
+    text-transform: none; }
   .bnr h2 {
     font-size: 55px;
     color: #ffffff;
@@ -492,6 +519,9 @@ textarea {
       background: #fff; }
       .bnr.bnr-thank select.input-date, .bnr.bnr-thank input.input-date {
         background: #fff url(../img/calendar-plus-o.png) no-repeat center right 12px; }
+
+.bnr-light {
+  padding-bottom: 150px; }
 
 .download-button {
   padding: 20px 0 60px 0;
@@ -629,11 +659,124 @@ textarea {
         opacity: 0.9; }
 
 /*----------end footer----------*/
+/*----------footer----------*/
+.footer-blue {
+  position: relative;
+  overflow: hidden;
+  background: #003c4c;
+  padding: 65px 0 0 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300; }
+  .footer-blue h6 {
+    color: #21b2d1;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-bottom: 10px; }
+  .footer-blue .container {
+    overflow: hidden; }
+
+.foot_top {
+  margin-bottom: 35px;
+  background: url(../img/foot_bg.png) no-repeat 120px center; }
+
+.foot_left {
+  float: left;
+  width: 240px;
+  font-size: 15px;
+  padding: 0 130px 0 0;
+  overflow: hidden;
+  box-sizing: content-box; }
+  .foot_left a.logo_foot {
+    margin-bottom: 23px;
+    display: block; }
+  .foot_left p {
+    padding-bottom: 17px; }
+    .foot_left p strong {
+      font-size: 30px;
+      font-weight: 300; }
+
+.foot_center {
+  float: left;
+  width: 340px;
+  overflow: hidden; }
+  .foot_center .clear {
+    padding-bottom: 28px; }
+  .foot_center p {
+    padding-right: 28px; }
+
+.foot_list {
+  width: 50%;
+  float: left; }
+  .foot_list li {
+    line-height: 30px;
+    font-size: 15px; }
+    .foot_list li a {
+      text-decoration: none; }
+      .foot_list li a:hover {
+        text-decoration: underline; }
+
+.foot_right {
+  float: right;
+  width: 300px; }
+  .foot_right form div {
+    margin-bottom: 9px; }
+  .foot_right input, .foot_right textarea {
+    width: 300px;
+    height: 39px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    color: #858585;
+    font-size: 13px;
+    font-family: "Museo", sans-serif;
+    border: none;
+    border-top: 1px solid #e0e7e9;
+    border-bottom: 1px solid #e0e7e9;
+    border-radius: 1px;
+    resize: none;
+    background: #ffffff; }
+  .foot_right textarea {
+    height: 120px;
+    padding: 10px; }
+  .foot_right .button {
+    border-radius: 0;
+    width: 300px;
+    height: 46px;
+    padding: 0;
+    background: #12a7c7;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    box-shadow: none; }
+    .foot_right .button:hover {
+      background: #25bdde; }
+
+.foot_bottom {
+  padding: 24px 0;
+  background: #05252d; }
+  .foot_bottom .float_left {
+    font-style: normal;
+    font-size: 12px;
+    color: #c2cdd0;
+    text-transform: uppercase;
+    line-height: 37px; }
+
+/*----------end footer----------*/
 @media only screen and (max-width: 1200px) {
   .bnr h1 {
     font-size: 40px; }
   img {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .foot_right {
+    width: 100%;
+    float: none;
+    clear: both;
+    text-align: center;
+    padding-top: 20px; }
+  .foot_center {
+    float: right; }
+  .foot_left {
+    padding: 0 0 30px 0; } }
 
 @media only screen and (max-width: 992px) {
   .bnr__text {
@@ -671,7 +814,7 @@ textarea {
 @media only screen and (max-width: 767px) {
   .logo {
     padding-bottom: 25px; }
-  .bnr h1 {
+  .bnr h1, .bnr h4 {
     font-size: 24px;
     padding-bottom: 20px; }
   .bnr__text {
@@ -716,4 +859,12 @@ textarea {
     margin-bottom: 15px;
     font-size: 16px; }
   .bnr.bnr-thank h4 {
-    font-size: 21px; } }
+    font-size: 21px; }
+  .header-light {
+    margin-bottom: 50px; }
+  .bnr-light {
+    padding-bottom: 0; }
+  .foot_left, .foot_center {
+    float: none;
+    width: 100%;
+    padding: 0 0 30px 0; } }

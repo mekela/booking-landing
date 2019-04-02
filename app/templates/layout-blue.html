@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="initial-scale=1"/>
+  <title>title</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+  <!--build:css css/styles.min.css-->
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!--endbuild-->
+</head>
+<body>
+<div class="wrapper">
+<!--main-->
+<div class="main">
+   {% block content %} {% endblock %}
+</div>
+<!--end-main-->
+<!--footer-->
+<footer class="footer-blue">
+  <div class="foot_top container">
+    <div class="foot_left">
+      <a href="#" class="logo_foot"><img src="img/logo_foot.png" alt=""></a>
+      <p>720 Collins Avenue <br>Miami Beach, FL 33139</p>
+      <p>sales@bookingninjas.com</p>
+      <p><strong>(866) 217 3210</strong></p>
+      <p><a href="#"><img src="img/partner.png" alt=""></a></p>
+    </div>
+    <div class="foot_center">
+      <div class="foot_list">
+        <h6>Company:</h6>
+        <ul>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Demo</a></li>
+        </ul>
+      </div>
+      <div class="foot_list">
+        <h6>Connect with us:</h6>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Appexchange</a></li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+      <h6>Bookingninjas</h6>
+      <p>Enhance the quality of guest services, increasing staff productivity and streamlining operations. Make your business a lot simpler and a lot more effective with Booking Ninjas.</p>
+    </div>
+    <div class="foot_right">
+      <h6>Contact us</h6>
+      <form>
+        <div><input type="text" placeholder="First Name"></div>
+        <div><input type="text" placeholder="Last Name"></div>
+        <div><input type="text" placeholder="Email"></div>
+        <div><textarea placeholder="Message"></textarea></div>
+        <div><input type="submit" class="button" value="Send Message"></div>
+      </form>
+    </div>
+  </div>
+  <div class="foot_bottom">
+    <div class="container">
+      <address class="float_left">
+        All rights reserved © 2016 - Booking Ninjas
+      </address>
+      <nav class="float_right">
+        <a href="#"><img src="img/visa.png" alt=""></a>
+        <a href="#"><img src="img/maestro.png" alt=""></a>
+        <a href="#"><img src="img/ae.png" alt=""></a>
+        <a href="#"><img src="img/paypal.png" alt=""></a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<!--end-footer-->
+</div>
+
+<!--SCRIPT -->
+<script src="js/jquery.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+<!--build:js js/main.min.js -->
+<!-- endbuild -->
+<script src="js/common.js"></script>
+<!-- END OF SCRIPT -->
+
+
+<!--modal-->
+<div class="modal" id="modal1">
+    <div class="modal__title">
+        <h6>Sign UP</h6>
+    </div>
+    <div class="modal__form">
+        <div class="modal__form-item"><input type="text" placeholder="Name"></div>
+        <div class="modal__form-item"><input type="text" placeholder="E-mail"></div>
+        <div class="modal__form-item"><input type="text" placeholder="Company name"></div>
+        <div class="modal__form-item"><input type="text" placeholder="CEO"></div>
+        <div class="modal__form-item"><input type="text" placeholder="Previous Events Spoken at (Optional)"></div>
+        <div class="modal__form-item"><img src="img/captcha.png" alt=""></div>
+        <div class="modal__form-item text_center"><button class="button">Submit</button><div>
+    </div>
+</div>
+<!--/modal-->
+
+
+</body>
+</html>
