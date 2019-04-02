@@ -626,6 +626,14 @@ textarea {
       padding: 110px 0 25px 0; }
   .modal__form {
     padding: 0 18px 22px 18px; }
+    .modal__form label {
+      display: block;
+      padding-bottom: 5px;
+      color: #1a1a1a;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 22px;
+      letter-spacing: 0.8px; }
   .modal__form-item {
     margin-bottom: 21px; }
     .modal__form-item input {
